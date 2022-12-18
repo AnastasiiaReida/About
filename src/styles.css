@@ -24,8 +24,11 @@ h3 {
 .heroes h1 {
   font-size: 96px;
 }
-.about {
+.about-page {
   padding: 100px 0;
+}
+.about-page h2 {
+  font-family: var(--heading-font-family);
 }
 /*h1,
 p,
@@ -39,12 +42,12 @@ h2 {
 p {
   font-weight: bold;
 }*/
-.about-page {
+.about-section {
   display: flex;
   margin: 60px;
   justify-content: space-evenly;
 }
-.about-page a {
+.about-section a {
   justify-content: center;
 }
 .main-color {
@@ -79,7 +82,8 @@ p {
   text-decoration: underline;
 }
 @media (max-width: 900px) {
-  .heroes {
+  .heroes,
+  .about-page {
     padding-bottom: 50px;
   }
   .heroes h1 {
@@ -94,5 +98,9 @@ p {
   .email-link {
     font-size: 18px;
     margin-bottom: 20px;
+  }
+  .about-page {
+    text-align: center;
+    margin: 0 10px;
   }
 }
