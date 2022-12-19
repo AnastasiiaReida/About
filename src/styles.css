@@ -20,6 +20,10 @@ h3 {
 h4 {
   font-size: 24px;
 }
+.navbar a:hover,
+.navbar-nav .nav-link.active {
+  color: var(--primary-color);
+}
 .heroes {
   padding: 100px 0;
   background-color: #f9f7fe;
