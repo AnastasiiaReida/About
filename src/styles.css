@@ -1,6 +1,6 @@
 :root {
   --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --secondary-color: #f9f7fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --heading-font-family: "Playfair Display", serif;
 }
@@ -26,7 +26,7 @@ h4 {
 }
 .heroes {
   padding: 100px 0;
-  background-color: #f9f7fe;
+  background-color: var(--secondary-color);
 }
 .heroes h1 {
   font-size: 96px;
@@ -50,7 +50,7 @@ h4 {
   justify-content: center;
 }
 .main-color {
-  background-color: #f9f7fe;
+  background-color: var(--secondary-color);
 }
 .primary-link {
   border-radius: 4px;
@@ -69,25 +69,53 @@ h4 {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
+footer {
+  margin: 60px 0;
+}
+.contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+.contact-box h3 {
+  font-size: 48px;
+  font-family: var(--heading-font-family);
+}
 .email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
+  /*display: flex;
+  justify-content: center;*/
+  text-align: center;
+  color: black;
   font-size: 28px;
   text-decoration: none;
+  transition: all 150ms ease-in-out;
 }
 
 .email-link:hover {
   text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.social-links a {
+  margin: 0 20px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+}
+.social-links a:hover {
+  color: white;
+  background: var(--primary-color);
 }
 @media (max-width: 900px) {
   .heroes,
   .about-page,
   .content-page,
   .contact-page {
-    padding-bottom: 50px;
     margin: 0;
-    padding: 0 10px;
+    padding: 50px 10px;
   }
   .heroes h1 {
     font-size: 64px;
@@ -104,5 +132,11 @@ h4 {
   }
   .about-page {
     text-align: center;
+  }
+  .contact-box h3 {
+    font-size: 18px;
+  }
+  .contact-box {
+    padding: 30px;
   }
 }
